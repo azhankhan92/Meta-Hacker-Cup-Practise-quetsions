@@ -1,0 +1,40 @@
+
+
+
+// Problem statment  meta hacker cup 2023 practise round   Question # 1 A1 : Chesse Burger collary 
+
+//You need to build a K-decker cheeseburger using ingredients from single and double cheeseburgers:
+
+Single: 2 buns, 1 cheese, 1 patty.
+Double: 2 buns, 2 cheeses, 2 patties.
+Given the quantities of single (S) and double (D) cheeseburgers, determine if you can construct a K-decker cheeseburger
+//solution
+
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    int single,Double,kth;
+    Scanner sc = new Scanner(System.in); 
+    int i=1;
+      int test = sc.nextInt(); // Initialized variable i
+      while (i <= test) {
+         int s = sc.nextInt();
+         int D = sc.nextInt();
+        int k = sc.nextInt();
+       
+        if (2* (s + D) >= k+1 && 2*D +s >=k )
+      System.out.print("Test Case#" +i +": Yes");
+        else
+        {
+          System.out.print("Test Case#" +i +": No");
+        }
+        i++;
+      }
+  }
+
+  // @Test
+  // void addition() {
+  //     assertEquals(2, 1 + 1);
+  // }
+}
